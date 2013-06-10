@@ -24,7 +24,6 @@ I've made an example page called 'opt.html' where you can have an idea of its si
        <script type="text/JavaScript" src="jquery.js"></script>
        <script type="text/JavaScript" src="ch-charts.js"></script>
        <script type="text/JavaScript" src="flot/jquery.flot.js"></script>
-       <script type="text/javascript" src="flot/jquery.flot.pie.js"></script>
        <script type="text/javascript">
 
          $(document).ready(function() {
@@ -48,3 +47,22 @@ I've made an example page called 'opt.html' where you can have an idea of its si
      </body>
     </html>
 
+#HTML
+
+Put all the `.js` needed inside your `<script>` tags.
+
+    <script type="text/JavaScript" src="jquery.js"></script>
+    <script type="text/JavaScript" src="ch-charts.js"></script>
+    <script type="text/JavaScript" src="flot/jquery.flot.js"></script>
+
+You'll need to make a `<div>` inside the body of your `html` with the size you want the chart to be.<br />
+Then, put a `<div>` inside it with the `id` or `class` you want to use to call the method.
+
+    <div class="demo-container" style="width: 1000px; height: 500px;">
+        <div id="placeholder" class="demo-placeholder" style="width: 100%; height: 100%;"></div>
+    </div>
+    
+#Javascript
+
+First, you'll see that I put some random data into `infoN` variables and pushed them into an array. <br />
+You can put whatever you want as long as it have this data format
