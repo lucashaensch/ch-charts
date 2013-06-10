@@ -2,9 +2,9 @@
 Plotting charts on your web app with easiness
 
 Ch-charts.js was made from the need of an easy way to plot charts on your web app.
-It was develop in a way that you don't have to study flot's documentation to make some pretty charts.
+It was develop in a way that you don't have to study the whole flot's documentation to make some charts.
 
-####Stuff you'll need
+###Stuff you'll need
 * Ch-charts.js (Thank you, Captain Obvious)
 * [jQuery][1]
 * [Flot][2]
@@ -14,9 +14,9 @@ It was develop in a way that you don't have to study flot's documentation to mak
 [1]: http://jquery.com/download/ "jQuery"
 [2]: http://flotcharts.org/ "Flot"
 
-####Let's make it clear
+###Example
 
-I've made an example page called 'opt.html' where you can have an idea of its simpleness.
+I've made an example page called `opt.html` where you can have an idea of its simpleness.
 
     <html>
      <head>
@@ -47,7 +47,9 @@ I've made an example page called 'opt.html' where you can have an idea of its si
      </body>
     </html>
 
-#HTML
+#Step by step
+
+##HTML
 
 Put all the `.js` needed inside your `<script>` tags.
 
@@ -62,7 +64,7 @@ Then, put a `<div>` inside it with the `id` or `class` you want to use to call t
         <div id="placeholder" class="demo-placeholder" style="width: 100%; height: 100%;"></div>
     </div>
     
-#Javascript
+##Javascript
 
 First, you'll see that I put some random data into `infoN` variables and pushed them into an array.
 
@@ -82,3 +84,6 @@ In my example page, I used the line chart(`lineChart()`), but you can also call 
 ```javascript
 $(".demo-placeholder").lineChart(data)
 ```
+
+It is still only capable of doing ugly line and column charts.
+As I manage to get time, it'll be improved to have `lines&columns`, `pies` and `bars` charts.
